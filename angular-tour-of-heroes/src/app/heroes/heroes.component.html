@@ -1,1 +1,14 @@
-{{hero}}
+<h2>{{hero.name | uppercase}} Details</h2>
+
+<!-- Details Area
+<div><span>id:</span>{{hero.id}}</div>
+<div><span>name: </span>{{hero.name}}</div> 
+-->
+
+<!--Details Area with Two-way data binding-->
+<div>
+    <label for="">name:
+      <input [(ngModel)]="hero.name" placeholder="name"/>
+    </label>
+</div>
+
